@@ -1,0 +1,33 @@
+name: V CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Install git
+        run: sudo apt update && sudo apt install -y git
+      - name: Checkout vlang
+        run: cd /usr/local ; sudo git clone https://github.com/vlang/v vlang
+      - name: Build and symlink vlang
+        run: cd /usr/local/vlang ; sudo make && sudo ./v symlink
+      - name: Install pastemyst
+        run: sudo v install billyeatcookies.pastemyst
+      - name: Test PasteMyst
+        env:
+          API_USERNAME: ${{ secrets.API_USERNAME }}
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+        run: sudo v -stats test tests/
+    
