@@ -2,7 +2,7 @@ module tests
 
 import os
 
-import billyeatcookies.pastemyst.endpoints
+import billyateallcookies.pastemyst.endpoints
 
 /**
  * Username used to fetch user object, value is taken from enviromental variables.

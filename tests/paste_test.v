@@ -2,8 +2,8 @@ module tests
 
 import os
 
-import billyeatcookies.pastemyst.endpoints
-import billyeatcookies.pastemyst.types
+import billyateallcookies.pastemyst.endpoints
+import billyateallcookies.pastemyst.types
 
 /**
  * Sample pasty object for test purposes.

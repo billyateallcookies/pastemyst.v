@@ -3,8 +3,8 @@ module endpoints
 import json
 import net.http
 
-import billyeatcookies.pastemyst
-import billyeatcookies.pastemyst.types
+import billyateallcookies.pastemyst
+import billyateallcookies.pastemyst.types
 
 /**
  * Represents an endpoint for retrieving various kinds of simple data.

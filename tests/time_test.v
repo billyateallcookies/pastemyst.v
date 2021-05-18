@@ -1,7 +1,7 @@
 module tests
 
-import billyeatcookies.pastemyst.endpoints
-import billyeatcookies.pastemyst.types
+import billyateallcookies.pastemyst.endpoints
+import billyateallcookies.pastemyst.types
 
 /**
  * Template object for tests.

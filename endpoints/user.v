@@ -3,8 +3,8 @@ module endpoints
 import net.http
 import json
 
-import billyeatcookies.pastemyst
-import billyeatcookies.pastemyst.types
+import billyateallcookies.pastemyst
+import billyateallcookies.pastemyst.types
 
 /**
  * Represents the endpoint for getting users.

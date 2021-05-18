@@ -9,7 +9,7 @@ All aspects of the v2 endpoint are currently implemented.
 You can install the library via [vpm](https://vpm.vlang.io/):
 
 ```bash
-v install billyeatcookies.pastemyst
+v install billyateallcookies.pastemyst
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ v install billyeatcookies.pastemyst
 The `endpoints` are grouped inside the library as a submodule. For example, information on a paste can be retrieved as such:
 
 ```go
-import billyeatcookies.pastemyst.endpoints
+import billyateallcookies.pastemyst.endpoints
 
 // optional; some endpoints require authorization through your personal
 //   api token, retrieved through your profile settings.

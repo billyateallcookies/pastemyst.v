@@ -1,6 +1,6 @@
 module tests
 
-import billyeatcookies.pastemyst.endpoints
+import billyateallcookies.pastemyst.endpoints
 
 /**
  * gets languages by name
